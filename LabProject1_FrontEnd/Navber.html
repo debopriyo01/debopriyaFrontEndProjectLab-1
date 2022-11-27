@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+
+        background-color: aqua;
+    }
+
+    header {
+        padding-top: 16px;
+        padding-right: 5px;
+        text-align: center;
+        line-height: 20px;
+        font-size: x-large;
+        font-weight: bold;
+        height: 50px;
+        background-color: brown;
+        margin-top: 6px;
+    }
+ 
+
+
+    ul {
+        padding: 0;
+        list-style: none;
+        background: black;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+        
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: white;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: white;
+        background: blueviolet;
+    }
+    ul li ul.Dropdown {
+        min-width: auto; 
+        max-width: 100%;
+        background: black;
+        display: none;
+        position: absolute;
+        
+       
+    }
+    ul li:hover ul.Dropdown {
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.Dropdown li {
+        display: block;
+    }
+</style>
+
+<body>
+    <header style="color:  whitesmoke;">Demo of DropDown List</header>
+
+    <nav style="width: 100%; background-color: black;">
+
+
+        <ul>
+
+            <li ><a href="">List 1</a>
+            
+                <ul class="Dropdown">
+
+                    <li><a href="">List 1</a></li>
+                    <li><a href="">List 1</a></li>
+                    <li><a href="">List 1</a></li>
+                </ul>
+            </li>
+            <li><a href="">List 2</a>
+            
+                <ul class="Dropdown">
+
+                    <li><a href="">List 2</a></li>
+                    <li><a href="">List 2</a></li>
+                    <li><a href="">List 2</a></li>
+                </ul>
+            </li>
+            <li><a href="">List 3</a>
+                <ul class="Dropdown">
+
+                    <li><a href="">List 3</a></li>
+                    <li><a href="">List 3</a></li>
+                    <li><a href="">List 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

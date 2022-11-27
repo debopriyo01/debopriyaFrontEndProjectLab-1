@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+    .MainDiv {
+
+        width: 20%;
+        max-width: 30%;
+        height: 410px;
+        background-color: whitesmoke;
+        text-align: center;
+        border: 2px solid red;
+        margin: 20px;
+        margin-left: 40%;
+        margin-top: 10%;
+        position: absolute;
+
+    }
+
+    .MainDiv article {
+        display: inline-block;
+    }
+
+    p {
+        padding-left: 10px;
+    }
+    h2{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .childDiv {
+
+        width: 40px;
+        height: 300px;
+        margin: 20px;
+        border-radius: 20px;
+
+        background-color: rgb(255, 128, 128);
+
+    }
+
+    #bar1 {
+        width: 100%;
+
+        height: 80%;
+        background-color: white;
+        /*This  will be measering The hight of The Animetetions */
+        animation-name: bargraph1;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+
+
+    }
+
+
+
+    @keyframes bargraph1 {
+
+        0% {
+            height: 100%;
+            background-color: white;
+        }
+    }
+
+    #bar2 {
+
+        width: 100%;
+
+        height: 60%;
+        /*This  will be measering The hight of The Animetetions */
+        animation-name: bargraph2;
+        background-color: white;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+
+
+    }
+
+    @keyframes bargraph2 {
+
+        0% {
+            height: 100%;
+            background-color: white;
+        }
+
+    }
+
+    #bar3 {
+        width: 100%;
+
+        height: 40%;
+        /*This  will be measering The hight of The Animetetions */
+        background-color: white;
+        animation-name: bargraph3;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+
+
+    }
+
+
+    @keyframes bargraph3 {
+
+        0% {
+            height: 100%;
+            background-color: white;
+
+        }
+
+    }
+</style>
+
+<body>
+
+    <div class="MainDiv">
+
+        <article>
+            <div class="childDiv">
+
+                <article id="bar1"></article>
+
+            </div>
+            <p>30%</p>
+        </article>
+
+        <article>
+            <div class="childDiv">
+                <article id="bar2"></article>
+
+            </div>
+            <p>40%</p>
+        </article>
+
+
+        <article>
+            <div class="childDiv">
+
+                <article id="bar3"></article>
+
+            </div>
+            <p>80%</p>
+            
+        </article>
+        <h2 style="text-align: center">Bar Graph</h2>
+        
+    </div>
+</body>
+
+</html>
